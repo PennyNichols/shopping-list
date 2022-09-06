@@ -1,0 +1,6 @@
+
+:root{
+    --mainBG: rgb(160, 143, 173);
+    --formBG: rgb(255, 255, 255);
+    --inputBG: rgba(160, 143, 173,.5);
+}
