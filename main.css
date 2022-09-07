@@ -46,6 +46,17 @@ body{
 #alert{
     text-align: center;
     width: 100%;
+    letter-spacing: .1rem;
+}
+
+.added{
+    color: var(--greenText);
+    background-color: var(--greenHighlight);
+}
+
+.removed{
+    color: var(--redText);
+    background-color: var(--redHighlight);
 }
 
 #form h1{
