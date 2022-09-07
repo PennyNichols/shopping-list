@@ -2,12 +2,12 @@
 :root{
     --mainBG: rgb(215, 208, 220);
     --formBG: rgb(255, 255, 255);
-    --inputBG: rgba(160, 143, 173,.5);
+    --inputBG: rgba(107, 67, 138, 0.1);
     --submitBG: rgb(131, 103, 152);
     --submitHoverBG: rgb(65, 25, 95);
     --mainFont: 'Poppins', sans-serif;
     --mainText: black;
-    --redText: rgb(106, 3, 3);
+    --redText: rgb(189, 6, 6);
     --redHighlight: rgba(171, 51, 51, .3);
     --greenText: rgb(0, 75, 0);
     --greenHighlight: rgba(15, 148, 15, .3);
@@ -37,11 +37,53 @@ body{
     background-color: var(--formBG);
     margin: 10rem auto;
     padding: 2rem;
-    width: 30rem;
+    width: 40rem;
+    box-shadow: var(--boxShadow);
+    border-radius: .4rem;
 }
 
 #alert{
     text-align: center;
-    color: var(--redText);
+    width: 15rem;
+}
 
+#form h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+#form .form-control{
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--inputBG);
+    border-radius: .4rem;
+}
+
+#new-list-item{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: .3rem;
+}
+
+#submit-btn{
+    padding: .3rem;
+    border: none;
+    border-radius: 0 .4rem .4rem 0;
+    background-color: var(--submitBG);
+}
+
+#clear-btn{
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    display: flex;
+    color: var(--redText);
 }
