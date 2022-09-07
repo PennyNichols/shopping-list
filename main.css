@@ -3,4 +3,16 @@
     --mainBG: rgb(160, 143, 173);
     --formBG: rgb(255, 255, 255);
     --inputBG: rgba(160, 143, 173,.5);
+    --submitBG: rgb(131, 103, 152);
+    --submitHoverBG: rgb(65, 25, 95);
+    --mainFont: 
+    --mainText: black;
+    --redText: rgb(106, 3, 3);
+    --greenText: rgb(0, 75, 0);
+    --submitHoverText: white; 
+    --editIcon: rgb(13, 248, 13);
+    --deleteIcon: rgb(182, 0, 0);
+    --themeDotBorder: 2px solid black;
+    --boxShadow: 9px 7px 11px 0px rgba(0,0,0,0.49);
+
 }
