@@ -1,18 +1,47 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 :root{
-    --mainBG: rgb(160, 143, 173);
+    --mainBG: rgb(215, 208, 220);
     --formBG: rgb(255, 255, 255);
     --inputBG: rgba(160, 143, 173,.5);
     --submitBG: rgb(131, 103, 152);
     --submitHoverBG: rgb(65, 25, 95);
-    --mainFont: 
+    --mainFont: 'Poppins', sans-serif;
     --mainText: black;
     --redText: rgb(106, 3, 3);
+    --redHighlight: rgba(171, 51, 51, .3);
     --greenText: rgb(0, 75, 0);
+    --greenHighlight: rgba(15, 148, 15, .3);
     --submitHoverText: white; 
     --editIcon: rgb(13, 248, 13);
     --deleteIcon: rgb(182, 0, 0);
     --themeDotBorder: 2px solid black;
     --boxShadow: 9px 7px 11px 0px rgba(0,0,0,0.49);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    color: var(--mainFont);
+}
+
+body{
+    background-color: var(--mainBG);
+}
+
+.main-section{
+    background-color: var(--formBG);
+    margin: 10rem auto;
+    padding: 2rem;
+    width: 30rem;
+}
+
+#alert{
+    text-align: center;
+    color: var(--redText);
 
 }
