@@ -48,12 +48,10 @@ h1 {
     margin-top: 1rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    font-family: var(--mainFont);
 }
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--mainText);
 }
 
 #myVideo {
@@ -78,7 +76,7 @@ p {
   border-radius: .5rem;
   box-shadow: var(--boxShadow);
   padding: 2rem;
-  max-width: 30rem;
+  max-width: 38rem;
   margin: 5rem auto;
   box-shadow: var(--boxShadow);
 }
@@ -102,7 +100,7 @@ p {
 
 .form-control{
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,6 +136,7 @@ p {
     color: var(--submitHoverText);
 }
 
+
 .clear-btn{
     border: none;
     background-color: transparent;
@@ -151,12 +150,37 @@ p {
 }
 
 .list-item{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+}
+
+.price, .total{
+    text-align: right;
+}
+
+.qty{
+    text-align: center;
+    margin-left: 2rem;
+}
+
+#price, #total{
+    text-align: right;
+}
+
+#qty{
+    text-align: center;
+    margin-left: 2rem;
+}
+
+
+#total{
+    text-align: right;
+    margin-right: none;
 }
 
 .edit-btn i{
     color: var(--editIcon);
+    margin-left: 1rem;
 }
 
 .delete-btn i{
