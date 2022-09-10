@@ -3,6 +3,7 @@ const alert = document.querySelector(".alert");
 const listInput = document.getElementById("list-input");
 const priceInput = document.getElementById("price-input");
 const qtyInput = document.getElementById("qty-input");
+const entry = document.querySelectorAll(".item")
 
 
 const submitBtn = document.querySelector(".submit-btn");
@@ -31,7 +32,7 @@ const addItem = (e) => {
 		attr.value = id;
 		element.setAttributeNode(attr);
 		element.classList.add("list-item");
-		element.innerHTML = `<p class="title">${value}</p>
+		element.innerHTML = `<p class="title item">${value}</p>
             <p class="price">${price}</p>
             <p class="qty">${qty}</p>
             <p class="total">${total}</p>
@@ -210,7 +211,12 @@ const createListItem = (id, value, price, qty, total) => {
 	list.appendChild(element);
 };
 
+const strike = (e) => {
+    
+} 
 
+
+entry.addEventListener("click", strike)
 form.addEventListener("submit", addItem);
 clearBtn.addEventListener("click", clearItems);
 window.addEventListener("DOMContentLoaded", setupItems);
