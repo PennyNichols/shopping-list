@@ -3,7 +3,6 @@ const alert = document.querySelector(".alert");
 const listInput = document.getElementById("list-input");
 const priceInput = document.getElementById("price-input");
 const qtyInput = document.getElementById("qty-input");
-const entry = document.querySelectorAll(".item")
 
 
 const submitBtn = document.querySelector(".submit-btn");
@@ -216,7 +215,6 @@ const strike = (e) => {
 } 
 
 
-entry.addEventListener("click", strike)
 form.addEventListener("submit", addItem);
 clearBtn.addEventListener("click", clearItems);
 window.addEventListener("DOMContentLoaded", setupItems);
