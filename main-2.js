@@ -1,3 +1,4 @@
+
 const form = document.querySelector(".form");
 const alert = document.querySelector(".alert");
 const listInput = document.getElementById("list-input");
@@ -16,6 +17,10 @@ let editQty;
 let editTotal;
 let editFlag = false;
 let editID = "";
+
+const strike = (e) => {
+
+}
 
 const addItem = (e) => {
     e.preventDefault();
@@ -70,7 +75,6 @@ const addItem = (e) => {
 const displayAlert = (text, action) => {
 	alert.textContent = text;
 	alert.classList.add(`alert-${action}`);
-	// remove alert
 	setTimeout(function () {
 		alert.textContent = "";
 		alert.classList.remove(`alert-${action}`);
@@ -210,9 +214,6 @@ const createListItem = (id, value, price, qty, total) => {
 	list.appendChild(element);
 };
 
-const strike = (e) => {
-    
-} 
 
 
 form.addEventListener("submit", addItem);
